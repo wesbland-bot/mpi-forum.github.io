@@ -1,26 +1,14 @@
 schedule:
     - day: Monday, December 07
-    - start: 2026-12-07T00:00
-      end: 2026-12-07T23:59
-      title: "Placeholder Agenda Item"
     - endday: done
 
     - day: Tuesday, December 08
-    - start: 2026-12-08T00:00
-      end: 2026-12-08T23:59
-      title: "Placeholder Agenda Item"
     - endday: done
 
     - day: Wednesday, December 09
-    - start: 2026-12-09T00:00
-      end: 2026-12-09T23:59
-      title: "Placeholder Agenda Item"
     - endday: done
 
     - day: Thursday, December 10
-    - start: 2026-12-10T00:00
-      end: 2026-12-10T23:59
-      title: "Placeholder Agenda Item"
     - endday: done
 
 plenaries:
@@ -33,11 +21,3 @@ plenaries:
       title: WG Status
       presenter: All WG chairs or their proxies
       done: 0
-
-    - type: Reading
-      title: Placeholder Reading
-      issue_number: 1234
-      presenter: Placeholder Presenter
-      done: 0
-      notes: ""
-
