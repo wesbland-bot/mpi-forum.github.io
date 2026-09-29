@@ -170,6 +170,8 @@ plenaries:
 
     - type: Plenary
       title: "WiP proposal for a dictionary functionality that generalizes the MPI_Publish/Lookup_name functions"
+      issue_number: 1123
+      pr_number: 1156
       presenter: Dominik
       done: 0
 
