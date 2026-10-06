@@ -8,18 +8,6 @@ import os.path
 # below. Otherwise this function won't be able to confirm that the ballot came from the correct
 # person (or that the person even registered).
 def confirm_id(id, name, org, attendance_list):
-    #print("MATCH ID for " + name + ", " + org);
-    #for entry in iter(attendance_list):
-    #    #print(entry);
-    #    if (id == entry['uuid'] and
-    #            name == entry['name'] and
-    #            org == entry['org']):
-    #        return 1;
-    #    else:
-    #        print("Expected ID for " + name + ", " + org + ": " + entry['uuid'])
-    #        print("Got ID: " + id)
-    #        print("Got name: " + entry['name'])
-    #        print("Got org: " + entry['org'])
     return 1;
 
 def delete_from_list(org, ooe_list):
@@ -31,11 +19,11 @@ def check_empty(val):
     return val == None or val == "" or int(val) == 0
 
 def main():
-    attendance_file="/Users/wbland/mpi/meeting-details/2026-06-jun/2026-06-01-registration.csv"
-    ballot_file="../_data/meetings/2026/06/votes.csv"
-    votes_file="/Users/wbland/Downloads/2026-06 Vote Day 3 (Responses) - Form Responses 1.csv"
-    prev_votes_file="../_data/meetings/2026/06/votes.csv"
-    prev_ballots_file="../_data/meetings/2026/06/ballot.csv"
+    attendance_file="/Users/wbland/mpi/meeting-details/2026-10-oct/2026-10-05-registration.csv"
+    ballot_file="../_data/meetings/2026/10/votes.csv"
+    votes_file="/Users/wbland/Downloads/2026-10 Vote Day 1 (Responses) - Form Responses 1.csv"
+    prev_votes_file="../_data/meetings/2026/10/votes.csv"
+    prev_ballots_file="../_data/meetings/2026/10/ballot.csv"
     if not os.path.isfile(prev_votes_file):
         prev_votes_file=""
     if not os.path.isfile(prev_ballots_file):

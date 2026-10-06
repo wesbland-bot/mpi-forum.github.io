@@ -2,20 +2,36 @@ schedule:
     - day: Monday, October 05
 
     - start: 2026-10-05T09:00
-      end: 2026-10-05T18:00
-      title: "Plenaries, see below"
+      end: 2026-10-05T10:30
+      title: "Plenary"
+      recording_url: "https://youtu.be/AT90HiWQNqc"
 
     - start: 2026-10-05T10:30
       end: 2026-10-05T11:00
       title: "Coffee Break"
 
+    - start: 2026-10-05T11:00
+      end: 2026-10-05T12:30
+      title: "Plenary"
+      recording_url: "https://youtu.be/8pkPnxNCJvg"
+
     - start: 2026-10-05T12:30
       end: 2026-10-05T14:00
       title: "Lunch"
 
+    - start: 2026-10-05T14:00
+      end: 2026-10-05T15:30
+      title: "Plenary"
+      recording_url: "https://youtu.be/djGrx3dXzF8"
+
     - start: 2026-10-05T15:30
       end: 2026-10-05T16:00
       title: "Coffee Break and Voting Block (Open until 9am CEST next day)"
+
+    - start: 2026-10-05T16:00
+      end: 2026-10-05T18:00
+      title: "Plenary"
+      recording_url: "https://youtu.be/YFgb-AiSkfI"
 
     - endday: done
 
@@ -43,72 +59,56 @@ plenaries:
     - type: Welcome
       title: Introductions
       presenter: All
-      done: 0
+      done: 1
 
     - type: Update
       title: WG Status
       presenter: All WG chairs or their proxies
-      done: 0
-
-    - type: Reading
-      title: "Add spawn mechanism compatible to Sessions"
-      issue_number: 1116
-      pr_number: 1150
-      presenter: Sonja
-      done: 0
-
-    - type: Plenary
-      title: "Adding state to MPI_Op_create and others"
-      issue_number: 839
-      pr_number:
-      presenter: Tim
-      done: 0
+      done: 1
 
     - type: Reading
       title: "Add new variant of MPI_Pcontrol that allows Fortran to pass more than just an integer value"
       issue_number: 1122
       pr_number: 1147
       presenter: Marc-Andre
-      done: 0
+      done: 1
 
     - type: Reading
       title: "Allow MPI_Pcontrol to be called at any time"
       issue_number: 1118
       pr_number: 1151
       presenter: Marc-Andre
-      done: 0
+      done: 1
+
+    - type: Reading
+      title: "Add spawn mechanism compatible to Sessions"
+      issue_number: 1116
+      pr_number: 1150
+      presenter: Sonja
+      done: 1
 
     - type: Errata Reading
       title: "Clarification for `user_data` in dropped event handler"
       issue_number: 1121
       pr_number: 1155
       presenter: Marc-Andre
-      done: 0
-
-    - type: Plenary
-      title: "Handle Introspection Interface"
-      presenter: Marc-Andre
-      done: 0
-
-    - type: Plenary
-      title: "Tools WG: Interception & recording of MPI I/O internal communicate"
-      presenter: Bill
-      done: 0
-
-    - type: Plenary
-      title: "Sessions WG: Add MPI Dictionary functionality to publish/lookup key-value pairs"
-      issue_number: 1123
-      pr_number: 1156
-      presenter: Dominik
-      done: 0
+      done: 1
 
     - type: No-No Reading
       title: "Sessions and attribute caching"
       issue_number: 1004
       pr_number: 1129
       presenter: Howard
-      done: 0
-      link: "https://github.com/mpi-forum/mpi-standard/pull/1129/changes/a5abbe977b974a0345944f5d4cb98f16947181c8..9c353a6eb9cd8ee5c467d5f6cfc6dee2bb2c4dc3"
+      done: 1
+      link: "https://github.com/mpi-forum/mpi-standard/pull/1129/changes/a5abbe977b974a0345944f5d4cb98f16947181c8..15a38e9dd35644140029659929600b58377ed463"
+      note: "US-friendly time"
+
+    - type: Errata Reading
+      title: "Don't suggest that predefined window attributes can be set"
+      issue_number: 1120
+      pr_number: 1154
+      presenter: Joseph
+      done: 1
       note: "US-friendly time"
 
     - type: No-No Reading
@@ -116,9 +116,55 @@ plenaries:
       issue_number: 59
       pr_number: 1131
       presenter: Joseph
-      done: 0
-      link: "https://github.com/mpi-forum/mpi-standard/pull/1131/changes/3930a6b6582212e522293ffeac1122324d9998b1..5341e2b78173fbaac86b02fbc12c55326461f387"
+      done: 1
+      link: "https://github.com/mpi-forum/mpi-standard/pull/1131/changes/3930a6b6582212e522293ffeac1122324d9998b1..fbfb3c21aad223e8f9276b0d9af65cf7570cc7aa"
       note: "US-friendly time"
+
+    - type: Plenary
+      title: "Handle Introspection Interface"
+      presenter: Joachim
+      done: 1
+      note: "Monday afternoon"
+
+    - type: Reading
+      title: "Deprecate MPI_PROD"
+      issue_number: 567
+      pr_number: 1152
+      presenter: Joseph
+      done: 1
+      note: "US-friendly time"
+
+    - type: Reading
+      title: "window displacement: large count and attribute questions/issues"
+      issue_number: 1112
+      pr_number: 1153
+      presenter: Joseph
+      done: 1
+      note: "US-friendly time"
+
+    - type: Plenary
+      title: "Upcoming meeting dates"
+      presenter: Martin/Wes
+      done: 1
+      note: "Monday, US-friendly time"
+    - type: Plenary
+      title: "redo callbacks to support third-party languages"
+      issue_number: 839
+      pr_number:
+      presenter: Tim
+      done: 1
+
+    - type: Plenary
+      title: "Sessions WG: Add MPI Dictionary functionality to publish/lookup key-value pairs"
+      issue_number: 1123
+      pr_number: 1156
+      presenter: Dominik
+      done: 1
+
+    - type: Plenary
+      title: "Tools WG: Interception & recording of MPI I/O internal communicate"
+      presenter: Bill
+      done: 0
 
     - type: Reading
       title: "ULFM: fault model is not completely defined"
@@ -137,34 +183,19 @@ plenaries:
       note: "US-friendly time"
 
     - type: Reading
-      title: "Deprecate MPI_PROD"
-      issue_number: 567
-      pr_number: 1152
-      presenter: Joseph
-      done: 0
-      note: "US-friendly time"
-
-    - type: Reading
-      title: "window displacement: large count and attribute questions/issues"
-      issue_number: 1112
-      pr_number: 1153
-      presenter: Joseph
-      done: 0
-      note: "US-friendly time"
-
-    - type: Errata Reading
-      title: "Don't suggest that predefined window attributes can be set"
-      issue_number: 1120
-      pr_number: 1154
-      presenter: Joseph
-      done: 0
-      note: "US-friendly time"
-
-    - type: Reading
       title: "Be clear about when MPI_ERROR is set, from the start"
       issue_number: 814
       pr_number: 968
       presenter: Joseph
+      done: 0
+      note: "US-friendly time"
+
+
+    - type: Plenary
+      title: "Pre-read: MPI_PARRIVED_ANY / MPI_PARRIVED_SOME for partitioned communication"
+      issue_number: 537
+      pr_number: 1159
+      presenter: Tony
       done: 0
       note: "US-friendly time"
 
